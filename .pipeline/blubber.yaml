@@ -1,0 +1,9 @@
+version: v4
+
+variants:
+  base:
+    base: docker-registry.wikimedia.org/golang1.18:latest
+    copies: [local]
+  lint:
+    includes: [base]
+    entrypoint: [go, fmt, ./...]

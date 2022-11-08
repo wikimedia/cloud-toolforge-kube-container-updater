@@ -1,0 +1,5 @@
+pipelines:
+  test:
+    blubberfile: blubber.yaml
+    stages:
+      - name: lint
